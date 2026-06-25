@@ -71,7 +71,7 @@ export default function Banners() {
         setShowModal(false);
       } else {
         const data = await res.json();
-        alert(data.error || "Failed to add banner");
+        alert((data.error || "Failed to add banner") + (data.details ? "\nDetails: " + JSON.stringify(data.details) : ""));
       }
     } catch (err) {
       console.error(err);
