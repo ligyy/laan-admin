@@ -469,7 +469,7 @@ const handleEdit = (p: Product) => {
                 <input className="input" value={name} onChange={e => setName(e.target.value)} placeholder="e.g. Floral Dress" />
               </Field>
               <Field label="Description">
-                <textarea className="input" value={description} rows={3} onChange={e => setDescription(e.target.value)} placeholder="Product description" style={{ resize: "vertical" }} />
+                <textarea className="input" value={description} rows={6} onChange={e => setDescription(e.target.value)} placeholder="Product description" style={{ resize: "vertical" }} />
               </Field>
               <Field label="Category">
                 <select className="input" value={categoryId} onChange={e => setCategoryId(e.target.value)}>
